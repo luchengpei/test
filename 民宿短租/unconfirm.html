@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/unconfirm.css" />
+	</head>
+	<body>
+		<!------------------header部分----------------->
+		<div class="header flex">
+			<button class="btn" onclick="javascript:history.back(-1);"><img src="img/back-btn@3x.png" alt="" /></button>
+			<span>实名认证</span>
+			<button class="btn"><img src="img/index-btn@3x.png" alt="" /></button>
+		</div>
+		<!--------------------main部分------------------>
+		<div class="main">
+			<div class="top flex">
+				
+			</div>
+			<div class="white-bg flex">
+				<div class="head-pic"><img src="img/head-pic2@3x.png" alt="" /></div>
+				<div class="nickname">用户名</div>
+				<div class="confirm">未认证</div>
+			</div>
+			
+			<ul class="info">
+				<li class="flex">
+					<div class="left">真实姓名</div>
+					<div class="right"><input type="text" placeholder="请填写您的真实姓名"/></div>
+				</li>
+				<li class="flex">
+					<div class="left">身份证号</div>
+					<div class="right"><input type="text" placeholder="请填写您的身份证号"/></div>
+				</li>
+				<li class="flex">
+					<div class="left">证件照片</div>
+				</li>
+				<!---------上传照片----------->
+				<li class="flex wrap-img">
+					<div class="img1" class="preview" id="preview1">
+						<input type="file" onchange="preview(this,preview1.id)"/>  
+						<img class="pic" src="img/add@3x.png" alt="" />
+						<div class="word">身份证正面照片</div>
+					</div>
+					<div class="img1" class="preview" id="preview2">
+						<input type="file" onchange="preview(this,preview2.id)"/> 
+						<img class="pic" src="img/add@3x.png" alt="" />
+						<div class="word">身份证背面照片</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!------------------footer部分---------------->
+		<div class="footer">
+			<div class="order" id="order" onclick="realName()">提交</div>
+		</div>
+		<script src="js/jquery-1.12.2.js"></script>
+		<script src="js/index.js"></script>
+		<script src="layer/layer.js"></script>
+	</body>
+</html>

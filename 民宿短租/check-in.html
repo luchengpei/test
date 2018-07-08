@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/check-in.css" />
+	</head>
+	<body onload="add()">
+		<!------------------header部分----------------->
+		<div class="header flex">
+			<button class="btn" onclick="javascript:history.back(-1);" ><img src="img/back-btn@3x.png" alt="" /></button>
+			<span>入住人</span>
+			<button class="btn"><img src="img/index-btn@3x.png" alt="" /></button>
+		</div>
+		<!-----------------主体部分------------------>
+		<div class="main">
+			<ul>
+				<li class="flex name">
+					<div class="check-in">入住人</div>
+					<div class="info"><input type="text" placeholder="请填写入住人姓名"/></div>
+				</li>
+				<li class="flex number">
+					<div class="check-in">身份证号</div>
+					<div class="info"><input type="text" placeholder="请填写入住人身份证号"/></div>
+				</li>
+				<li class="flex add">
+					<div class="check-in">添加入住人</div>
+					<div class="add-people"><img src="img/add-people@3x.png" alt="" /></div>
+				</li>
+			</ul>
+		</div>
+		<!------------------footer部分---------------->
+		<div class="footer">
+			<div class="order">下一步</div>
+		</div>
+		<script src="js/jquery-1.12.2.js"></script>
+		<script src="js/index.js"></script>
+		<script src="layer/layer.js"></script>
+	</body>
+</html>

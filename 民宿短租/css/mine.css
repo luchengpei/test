@@ -1,0 +1,112 @@
+@charset "utf-8";
+html{
+	position: relative;
+}
+/*让header部分和footer部分固定，中间主体部分能滑动*/
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div.main{
+	flex: 1;
+	overflow-y: auto;
+}
+/*header部分*/
+div.header{
+	height: 2.25rem;
+	background: rgb(255,82,123);
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.5rem;
+	color: #fff;
+}
+div.header .btn{
+	width: 1.2rem;
+	height: .4rem;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+div.header .btn img{
+	width: 100%;
+	height: 100%;
+}
+div.header span{
+	font-size:1rem;
+}
+/*主体部分*/
+div.main .top{
+	background: rgb(255,82,123);
+	height: 6.525rem;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+}
+div.main .top .head-pic{
+	width: 3rem;
+	height: 3rem;
+}
+div.main .top .head-pic img{
+	width: 100%;
+	height: 100%;
+}
+div.main ul.info li{
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 .65rem;
+	height: 2.5rem;
+	border-bottom: .025rem solid #d2d2d4;
+	font-size: .65rem;
+}
+div.main ul.info .left{
+	color: rgba(32, 27, 38, 0.4);
+}
+div.main .services{
+	height: 2.2rem;
+	line-height: 2.2rem;
+	text-align: center;
+	background-color: #ff527b;
+	border-radius: .25rem;
+	width: 90%;
+	margin: 1.85rem auto;
+	letter-spacing: .125rem;
+	color: #fafafa;
+}
+/*footer部分*/
+div.footer{
+	height: 2.425rem;
+	background-color: #f0f0f0;
+	justify-content: space-around;
+}
+div.footer>a{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.footer>a .img-wrap{
+	width: .95rem;
+	height: .95rem;
+	margin-bottom: .1rem;
+}
+div.footer>a .img-wrap img{
+	width: 100%;
+	height: 100%;
+}
+div.footer>a .active{
+	color: rgb(255,82,123);
+}
+/*遮罩层*/
+div.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.25;
+	z-index: 5;
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+html{
+	position: relative;
+}
+/*让header部分和footer部分固定，中间主体部分能滑动*/
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div.main{
+	flex: 1;
+	overflow-y: auto;
+}
+/*header部分*/
+div.header{
+	height: 2.25rem;
+	background: rgb(255,82,123);
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.5rem;
+	color: #fff;
+}
+div.header .btn{
+	width: 1.2rem;
+	height: .4rem;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+div.header .btn img{
+	width: 100%;
+	height: 100%;
+}
+div.header span{
+	font-size:1rem;
+}
+/*主体部分*/
+div.main{
+	padding: 0 .45rem .5rem .45rem;
+}
+div.main .top{
+	height: 1.85rem;
+	line-height: 1.85rem;
+	border-bottom:.05rem solid #dedede;;
+}
+div.main .top .left{
+	height: 1.85rem;
+	line-height: 1.85rem;
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: .75rem;
+	color: #1b1720;
+	
+}
+div.main .top .left span{
+	display: inline-block;
+	padding: .45rem .35rem;
+}
+div.main .top .left:nth-of-type(1) span{
+	border-bottom: .1rem solid #FF527B;
+}
+/*暂无订单*/
+div.main .no-order .wrap-img{
+	width: 3.95rem;
+	height: 3.95rem;
+	margin: 0 auto;
+	margin-top: 4.5rem;
+}
+div.main .no-order .wrap-img img{
+	width: 3.95rem;
+	height: 3.95rem;
+}
+div.main .no-order .warn{
+	color: #c1c1c1;
+	font-size: .6rem;
+	text-align: center;
+	margin-top: .9rem;
+}
+/*有订单*/
+div.main .room-info{
+	border-bottom: .05rem solid #dedede;
+	padding: .55rem 0;
+}
+div.main .room-info .wrap-img{
+	width: 4.5rem;
+	height: 3.3rem;
+}
+div.main .room-info .wrap-img img{
+	width: 100%;
+	height: 100%;
+}
+div.main .content{
+	flex-direction: column;
+	margin-left: .25rem;
+	flex: 1;
+	justify-content: space-between;
+}
+div.main .content .name{
+	font-size: .75rem;
+	margin-bottom: .4rem;
+	justify-content: space-between;
+}
+div.main .content .name .time{
+	color: #b2b2b2;
+	font-size: .55rem;
+}
+div.main .content .addr-wrap{
+	flex: 1;
+}
+div.main .content .addr{
+	font-size: .6rem;
+	color: #ff527b;
+	margin-right: .4rem;
+}
+div.main .content .map{
+	width: .6rem;
+	height: .7rem;
+}
+div.main .content .goods{
+	color: #797979;
+	justify-content: space-between;
+}
+div.main .content .goods>*{
+	font-size: .6rem;
+}
+/*footer部分*/
+div.footer{
+	height: 2.425rem;
+	background-color: #f0f0f0;
+	justify-content: space-around;
+}
+div.footer>a{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.footer>a .img-wrap{
+	width: .95rem;
+	height: .95rem;
+	margin-bottom: .1rem;
+}
+div.footer>a .img-wrap img{
+	width: 100%;
+	height: 100%;
+}
+div.footer>a .active{
+	color: rgb(255,82,123);
+}
+.order2{
+	display: none;
+}

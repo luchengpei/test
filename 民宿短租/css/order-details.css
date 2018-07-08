@@ -1,0 +1,176 @@
+@charset "utf-8";
+/*main部分*/
+div.main{
+	background: #f6f6f6;
+	flex-direction: column;
+}
+/*房间信息*/
+div.main .room-info{
+	padding: .5rem 0 .5rem .7rem;
+	background: #fff;
+}
+div.main .room-info .wrap-img{
+	width: 5rem;
+	height: 3.75rem;
+}
+div.main .room-info .wrap-img img{
+	width: 100%;
+	height: 100%;
+}
+div.main .content{
+	flex-direction: column;
+	margin-left: .25rem;
+	flex: 1;
+	justify-content: space-between;
+}
+div.main .content .name{
+	font-size: .75rem;
+	margin-bottom: .4rem;
+}
+div.main .content .addr-wrap{
+	flex: 1;
+}
+div.main .content .addr{
+	font-size: .6rem;
+	color: #ff527b;
+	margin-right: .4rem;
+}
+div.main .content .map{
+	width: .6rem;
+	height: .7rem;
+}
+div.main .content .goods{
+	color: #797979;
+	justify-content: space-between;
+}
+div.main .content .goods>*{
+	font-size: .6rem;
+}
+/*入住人信息*/
+div.main ul.people-info{
+	margin-top: .5rem;
+	background: #fff;
+	flex: 1;
+	padding: 0 .5rem;
+}
+div.main ul.people-info li{
+	margin: .625rem 0;
+}
+div.main ul.people-info .check-in{
+	width: 3.75rem;
+	color: rgb(178,178,178);
+}
+div.main ul.people-info .info{
+	flex: 1;
+	border-bottom: .05rem solid rgb(228,228,228);
+	padding-bottom: .7rem;
+	text-align: right;
+	color: #232323;
+}
+
+
+/*取消订单按钮*/
+div.footer div.cancel-order{
+	border: solid .05rem #999999;
+	background-color: #f6f6f6;
+	color: #3e3e3e;
+}
+/*评价按钮*/
+div.footer a.comment{
+	display: inline-block;
+	width: 100%;
+}
+
+/*遮罩层*/
+div.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.3;
+	z-index: 5;
+	display: none;
+}
+/*模态框*/
+.both{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 8;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+div.modal{
+	width: 91%;
+	background: #fff;
+	z-index: 10;
+	border-radius: .25rem;
+	padding: 1.1rem .75rem .75rem .75rem;
+	position: relative;
+}
+div.modal .close{
+	width: .8rem;
+	height: .8rem;
+	position: absolute;
+	right: .375rem;
+	top: .375rem;
+}
+div.modal .close img{
+	width: 100%;
+	height: 100%;
+}
+div.modal .title{
+	text-align: center;
+	font-size: .85rem;
+	color: rgb(14,14,14);
+	letter-spacing: .15rem;
+}
+div.modal .wrap-img{
+	width: 3rem;
+	height: 3.2rem;
+	margin: 0.9rem auto;
+}
+div.modal .wrap-img img{
+	width: 100%;
+	height: 100%;
+}
+div.modal .pwd{
+	width: 80%;
+	margin: 0 auto;
+	height: 2.25rem;
+	background-color: #f3f3f3;
+	border-radius: .3rem;
+	border: solid .05rem #b0b0b0;
+	font-size: 1.1rem;
+	line-height: 2.25rem;
+	letter-spacing: .175rem;
+	color: #1d1d1d;
+	text-align: center;
+}
+div.modal .warn{
+	font-size: .55rem;
+	letter-spacing: .02rem;
+	color: #969696;
+	text-align: center;
+	margin-top: .5rem;
+}
+div.modal .ok{
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	background-color: #ff527b;
+	border-radius: .3rem;
+	letter-spacing: .125rem;
+	color: #ffffff;
+	margin-top: 2.5rem;
+	width: 100%;
+	display: inline-block;
+}
+
+

@@ -1,0 +1,198 @@
+﻿@charset "utf-8";
+html{
+	position: relative;
+}
+/*让header部分和footer部分固定，中间主体部分能滑动*/
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+div.main{
+	flex: 1;
+	overflow-y: auto;
+}
+/*header部分*/
+div.header{
+	height: 2.25rem;
+	background: rgb(255,82,123);
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.5rem;
+	color: #fff;
+}
+div.header .btn{
+	width: 1.2rem;
+	height: .4rem;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+div.header .btn img{
+	width: 100%;
+	height: 100%;
+}
+div.header span{
+	font-size:1rem;
+}
+/*主体部分*/
+div.main{
+	padding: .6rem .75rem;
+}
+div.main .title{
+	font-size: .7rem;
+	color:#1b1720;
+}
+div.main .banner{
+	margin: .35rem 0 .65rem 0;
+}
+div.main .banner .img-wrap{
+	height: 4.5rem;
+	flex: 1;
+	position: relative;
+}
+div.main .banner .img-wrap+.img-wrap{
+	margin-left: .25rem;
+}
+div.main .img-wrap img{
+	width: 100%;
+	height: 100%;
+	
+}
+div.main .img-wrap .mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .1;
+	z-index: 4;
+}
+div.main .img-wrap .name{
+	width: 94%;
+	height: 1.4rem;
+	border-radius: .4rem;
+	border: 1px solid #ff527b;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	margin-top: -.6rem;
+	text-align: center;
+	line-height: 1.4rem;
+	color: #ff527b;
+}
+div.main .content li{
+	padding-bottom: .5rem;
+	border-bottom:.05rem solid #dedede;
+	margin-bottom: .5rem;
+}
+div.main .content li:nth-last-of-type(1){
+	border-bottom:0;
+	margin-bottom: 0;
+}
+div.main .content .img-wrap{
+	height: 9rem;
+}
+div.main .content .img-wrap img{
+	width: 100%;
+	height: 100%;
+}
+div.main .content .name{
+	font-size: .6rem;
+	margin:.5rem 0;
+}
+div.main .content .addr{
+	color: rgb(255,82,123);
+	font-size: .6rem;
+	margin-left: 1.25rem;
+}
+/*footer部分*/
+div.footer{
+	height: 2.425rem;
+	background-color: #f0f0f0;
+	justify-content: space-around;
+}
+div.footer>a{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.footer>a .img-wrap{
+	width: .95rem;
+	height: .95rem;
+	margin-bottom: .1rem;
+}
+div.footer>a .img-wrap img{
+	width: 100%;
+	height: 100%;
+}
+div.footer>a .active{
+	color: rgb(255,82,123);
+}
+/*遮罩层*/
+div.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.25;
+	z-index: 5;
+	/*display: none;*/
+}
+/*模态框*/
+div.modal{
+	width: 91%;
+	height: 70%;
+	background: #fff;
+	opacity: 1;
+	position: absolute;
+	top: 15%;
+	left: 4.5%;
+	z-index: 10;
+	border-radius: .125rem;
+	padding: 1rem .75rem .6rem .75rem;
+	flex-direction: column;
+	/*display: none;*/
+}
+div.modal .close{
+	width: .8rem;
+	height: .8rem;
+	position: absolute;
+	right: .375rem;
+	top: .375rem;
+}
+div.modal .close img{
+	width: 100%;
+	height: 100%;
+}
+div.modal .title{
+	font-size: .85rem;
+	text-align: center;
+	margin-bottom: 1.45rem;
+	
+}
+div.modal .content{
+	flex: 1;
+	overflow-y: auto;
+}
+div.modal .content p{
+	color: #000000;
+	font-size: .6rem;
+	line-height: 1.05rem;
+	letter-spacing: .1rem;
+}
+div.modal .btn{
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	background: #ff527b;
+	color: #fff;
+	border-radius: .3rem;
+	margin-top: .6rem;
+}

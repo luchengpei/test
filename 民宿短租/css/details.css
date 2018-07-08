@@ -1,0 +1,302 @@
+/*main部分*/div.main{
+	background: rgb(246,246,246);
+}
+/*banner*/
+.banner{
+	height: 12rem;
+	font-size: 40px;
+	text-align: center;
+}
+.carousel-item{
+	height: 12rem;
+	color: #fff;
+	font-family:  Arial Black;
+}
+.ft-carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.ft-carousel .carousel-inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.ft-carousel .carousel-inner .carousel-item {
+	float: left;
+	height: 100%;
+}
+
+.ft-carousel .carousel-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.ft-carousel .carousel-indicators {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+}
+
+.ft-carousel .carousel-indicators span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	margin: 0 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.ft-carousel .carousel-indicators span.active {
+	background-color: #de3a3a;
+}
+
+.ft-carousel .carousel-btn {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 45px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+
+
+/*房间信息*/
+div.main .content{
+	padding: .75rem;
+	background: #fff;
+}
+div.main .content .name{
+	font-size: 1.05rem;
+	margin-bottom: .4rem;
+}
+div.main .content .addr{
+	font-size: .6rem;
+	color: #ff527b;
+	margin-right: .4rem;
+}
+div.main .content .map{
+	width: .6rem;
+	height: .7rem;
+}
+div.main .content .goods{
+	color: #797979;
+	justify-content: space-between;
+	margin: .75rem 0;
+}
+div.main .content .goods .icon1{
+	width: .75rem;
+	height: .7rem;
+}
+div.main .content .goods .icon2{
+	width: .65rem;
+	height: .75rem;
+}
+div.main .content .goods .icon3{
+	width: .7rem;
+	height: .75rem;
+}
+div.main .content .goods .icon4{
+	width: .7rem;
+	height: .8rem;
+}
+div.main .content .goods span{
+	position: relative;
+	top: .1rem;
+	font-size: .6rem;
+	margin-left: .2rem;
+}
+div.main .space{
+	height: ;
+}
+/*选项卡*/
+div.main .tab{
+	margin-top:.5rem;
+	padding:.5rem .75rem;
+	background: #fff;
+}
+div.main .tab .title{
+	justify-content: space-between;	
+}
+div.main .tab .title div{
+	font-size: .75rem;
+	color: #1b1720;
+}
+#concent div{
+    display: none;
+    margin-top: .45rem;
+    letter-spacing: .125rem;
+	line-height: 1.05rem;
+	color:rgb(125,125,125);
+}
+#concent div.active{
+     display: block;
+}
+
+/*入住时间*/
+div.main .time{
+	margin-top:.5rem;
+	padding:.5rem .75rem;
+	background: #fff;
+}
+div.main .time>div:nth-of-type(1),div.main .time>div:nth-of-type(2){
+	justify-content: space-between;
+}
+div.main .time>div:nth-of-type(1) div{
+	font-size: .75rem;
+	color: #1b1720;
+}
+div.main .time>div:nth-of-type(2) div{
+	font-size: .75rem;
+	color:rgb(125,125,125);
+	margin-top: .5rem;
+}
+/*房间评价*/
+div.main .comment{
+	margin-top:.5rem;
+	padding:.75rem;
+	background: #fff;
+}
+div.main .comment .title{ 
+	font-size: .75rem;
+	color: #1b1720;
+}
+div.main .comment li{
+	border-bottom: .05rem solid rgb(222,222,222);
+	padding-bottom: .65rem;
+	margin-top: .65rem;
+}
+div.main .comment li:nth-last-of-type(1){
+	border-bottom: .0;
+	padding-bottom: 0;
+}
+div.main .comment .info{
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: .65rem;
+}
+div.main .comment .info .wrap-img{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+div.main .comment .wrap-img img{
+	width: 100%;
+	height: 100%;
+}
+div.main .comment .info .nickname{
+	flex: 1;
+	margin-left: .5rem;
+	font-size: .75rem;
+	color: rgb(35,35,35);
+}
+div.main .comment .info .date{
+	color: rgb(178,178,178);
+}
+div.main .comment .comment-content{
+	color: rgb(125,125,125);
+	line-height: 1.05rem;
+	letter-spacing: .125rem;
+	text-align: justify;
+}
+
+
+/*遮罩层*/
+div.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.3;
+	z-index: 5;
+	display: none;
+}
+/*模态框*/
+.both{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 8;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+div.modal{
+	background: #fff;
+	z-index: 10;
+	border-radius: .25rem;
+	padding: 1.5rem .75rem .75rem .75rem;
+	width: 90%;
+	position: relative;
+}
+div.modal .close{
+	width: .8rem;
+	height: .8rem;
+	position: absolute;
+	right: .375rem;
+	top: .375rem;
+}
+div.modal .close img{
+	width: 100%;
+	height: 100%;
+}
+/*日历*/
+div.modal .content{
+	padding: 0 .75rem;
+}
+
+div.modal .content .day>div{
+    width: 14.28%;
+   	height: 1.65rem;
+    line-height: 1.65rem;
+    text-align: center;
+    font-size: .5rem;
+}
+div.modal .content .dates>div{
+    width: 14.28%;
+    height: 1.65rem;
+    line-height: 1.65rem;
+    text-align: center;
+    font-size: .6rem;
+    float: left;
+}
+div.modal .content .month{
+	justify-content: space-around;
+}
+div.modal .content .month>div{
+	font-size: 1rem;
+	margin-bottom: .5rem;
+	cursor: pointer;
+}
+div.modal .content #year{
+	text-align: center;
+	margin-bottom: .5rem;
+}
+div.modal .order{
+	color: #fff;
+	background: rgb(255,82,123);
+	text-align: center;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	font-size: .75rem;
+	border-radius: .3rem;
+	margin-top: .5rem;
+}
+div.modal #pre-month,div.modal #next-month,div.modal #year{
+	color: #e6e6e6;
+}
+div.modal .spe{
+	color: #fe4f20;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/order-details.css" />
+	</head>
+	<body onload="mask1()">
+		<!------------------header部分----------------->
+		<div class="header flex">
+			<button class="btn" onclick="javascript:history.back(-1);"><img src="img/back-btn@3x.png" alt="" /></button>
+			<span>预定详情</span>
+			<button class="btn"><img src="img/index-btn@3x.png" alt="" /></button>
+		</div>
+		<!-----------------主体部分------------------>
+		<div class="main flex">
+			<!--房间信息-->
+			<div class="room-info flex">
+				<div class="wrap-img">
+					<img src="img/room@3x.png" alt="" />
+				</div>
+				<div class="content flex">
+					<div class="name">重庆嘴渔村的特色民宿</div>
+					<div class="addr-wrap"><span class="addr">沙坪坝区避山区</span><img src="img/details-map@3x.png" alt="" class="map" /></div>
+					<div class="goods flex">
+						<div>一室一厅</div>
+						<div>四人房客</div>
+						<div>卫生间</div>
+						<div>一次性毛巾</div>
+					</div>
+				</div>
+			</div>
+			<!--入住人信息-->
+			<ul class="people-info">
+				<li class="flex">
+					<div class="check-in">房客</div>
+					<div class="info">2位</div>
+				</li>
+				<li class="flex">
+					<div class="check-in">入住人</div>
+					<div class="info">张三</div>
+				</li>
+				<li class="flex">
+					<div class="check-in"></div>
+					<div class="info">李四</div>
+				</li>
+				<li class="flex">
+					<div class="check-in">日期</div>
+					<div class="info">11月9日至10日</div>
+				</li>
+				<li class="flex">
+					<div class="check-in">金额</div>
+					<div class="info">￥98</div>
+				</li>
+			</ul>
+		</div>
+		<!------------------footer部分---------------->
+		<div class="footer">
+			<div class="order" id="order">付款</div>
+		</div>
+		
+		<!--------------------遮罩层------------------->
+		<div class="mask" id="mask">
+		</div>
+		<!--------------------模态框------------------->
+		<div class="both flex">
+			<div class="modal">
+				<div class="close" id="close"><img src="img/index-close@3x.png" alt="" /></div>
+				<div class="title">付款成功</div>
+				<div class="wrap-img"><img src="img/success@3x.png" alt="" /></div>
+				<div class="pwd">5455</div>
+				<div class="warn">您的智慧民宿已经付款成功。凭此验证码开门！</div>
+				<a href="index.html" class="ok" id="agree" >好的</a>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>

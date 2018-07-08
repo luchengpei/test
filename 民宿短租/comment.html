@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/comment.css" />
+	</head>
+	<body>
+		<!------------------header部分----------------->
+		<div class="header flex">
+			<button class="btn" onclick="javascript:history.back(-1);"><img src="img/back-btn@3x.png" alt="" /></button>
+			<span>评价</span>
+			<button class="btn"><img src="img/index-btn@3x.png" alt="" /></button>
+		</div>
+		<!-----------------主体部分------------------>
+		<div class="main">
+			<!--房间信息-->
+			<div class="room-info flex">
+				<div class="wrap-img">
+					<img src="img/room@3x.png" alt="" />
+				</div>
+				<div class="content flex">
+					<div class="name">重庆嘴渔村的特色民宿</div>
+					<div class="addr-wrap"><span class="addr">沙坪坝区避山区</span><img src="img/details-map@3x.png" alt="" class="map" /></div>
+					<div class="goods flex">
+						<div>一室一厅</div>
+						<div>四人房客</div>
+						<div>卫生间</div>
+						<div>一次性毛巾</div>
+					</div>
+				</div>
+			</div>
+			<div class="gray-line"></div>
+			<!--评论-->
+			<div class="comment">
+				<div class="room-comment">评价房间</div>
+				<textarea name="" rows="" cols="" placeholder="输入你对该民宿的评价"></textarea>
+				<div class="add-box flex">
+					<img src="img/add@3x.png" alt="" />
+					<input type="file" onchange="preview(this,preview3.id)"/> 
+				</div>
+				<!--图片上传-->
+				<div id="preview3">
+					 
+				</div>
+			</div>
+			
+		</div>
+		<!------------------footer部分---------------->
+		<div class="footer">
+			<a class="comment order" id="order" onclick="submit()">提交</a>
+		</div>
+		<script src="js/jquery-1.12.2.js"></script>
+		<script src="js/index.js"></script>
+		<script src="layer/layer.js"></script>
+	</body>
+</html>

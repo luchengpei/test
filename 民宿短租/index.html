@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body onload="mask()">
+		<!------------------header部分----------------->
+		<div class="header flex">
+			<button class="btn"></button>
+			<span>智慧名宿</span>
+			<button class="btn"><img src="img/index-btn@3x.png" alt="" /></button>
+		</div>
+		<!--------------------main部分------------------>
+		<div class="main">
+			<div class="title">个性推荐</div>
+			<div class="banner flex">
+				<a class="img-wrap" href="details.html">
+					<img src="img/index1@3x.png" alt="" />
+					<div class="mask"></div>
+					<div class="name">农民名宿</div>
+				</a>
+				<a class="img-wrap" href="details.html">
+					<img src="img/index2@3x.png" alt="" />
+					<div class="mask"></div>
+					<div class="name">温泉名宿</div>
+				</a>
+				<a class="img-wrap" href="details.html">
+					<img src="img/index3@3x.png" alt="" />
+					<div class="mask"></div>
+					<div class="name">传统建筑名宿</div>
+				</a>
+			</div>
+			<ul class="content">
+				<li>
+					<a class="img-wrap" href="details.html"><img src="img/index4@3x.png" alt="" /></a>
+					<div class="name">重庆嘴鱼村的特色名宿</div>
+					<div class="info">￥<span class="price">120</span><a href="map.html" class="addr">沙坪坝区璧山区</a></div>
+				</li>
+				<li>
+					<a class="img-wrap" href="details.html"><img src="img/index5@3x.png" alt="" /></a>
+					<div class="name">重庆嘴鱼村的特色名宿</div>
+					<div class="info">￥<span class="price">120</span><a href="map.html" class="addr">沙坪坝区璧山区</a></div>
+				</li>
+				<li>
+					<a class="img-wrap" href="details.html"><img src="img/index4@3x.png" alt="" /></a>
+					<div class="name">重庆嘴鱼村的特色名宿</div>
+					<div class="info">￥<span class="price">120</span><a href="map.html" class="addr">沙坪坝区璧山区</a></div>
+				</li>
+				<li>
+					<a class="img-wrap" href="details.html"><img src="img/index5@3x.png" alt="" /></a>
+					<div class="name">重庆嘴鱼村的特色名宿</div>
+					<div class="info">￥<span class="price">120</span><a href="map.html" class="addr">沙坪坝区璧山区</a></div>
+				</li>
+			</ul>
+		</div>
+		<!--------------------footer部分------------------->
+		<div class="footer flex">
+			<a href="javascript:;" class="flex">
+				<div class="img-wrap"><img src="img/index-active@3x.png" alt="" /></div>
+				<span class="active">首页</span>
+			</a>
+			<a href="order-record.html"  class="flex">
+				<div class="img-wrap"><img src="img/order-default@3x.png" alt="" /></div>
+				<span>订单</span>
+			</a>
+			<a href="mine.html"  class="flex">
+				<div class="img-wrap"><img src="img/mine-default@3x.png" alt="" /></div>
+				<span>我的</span>
+			</a>
+		</div>
+		
+		<!--------------------遮罩层------------------->
+		<div class="mask" id="mask">
+		</div>
+		<!--------------------模态框------------------->
+		<div class="modal flex">
+			<div class="close" id="close"><img src="img/index-close@3x.png" alt="" /></div>
+			<div class="title">用户协议</div>
+			<div class="content">
+				<p>智慧民宿在此特别提醒您（用户）在注册成为用户之前，请认真阅读本《用户协议》（以下简称“协议”），
+				确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，
+				否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。</p>
+				<p>
+					本协议约定智慧民宿与用户之间关于“陌陌”软件服务（以下简称“服务”）的权利义务。“用户”是指注册、登录、使用本服务的个人。
+					本协议可由陌陌科技随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本网站查阅最新版协议条款。
+					在陌陌科技修改协议条款后，如果用户不接受修改后的条款，请立即停止使用陌陌科技提供的服务，用户继续使用智慧民宿提供的服务将被视为接受修改后的协议。
+				</p>
+			</div>
+			<div class="btn" id="agree">同意用户协议</div>
+		</div>
+		
+		<script src="js/index.js"></script>
+	</body>
+</html>
